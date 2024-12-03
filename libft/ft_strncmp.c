@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raissaou <raissaou@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-12-03 08:18:09 by raissaou          #+#    #+#             */
-/*   Updated: 2024-12-03 08:18:09 by raissaou         ###   ########.fr       */
+/*   Created: 2024-12-03 11:55:51 by raissaou          #+#    #+#             */
+/*   Updated: 2024-12-03 11:55:51 by raissaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <stddef.h>
-# include <unistd.h>
-
-#endif
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	
+}

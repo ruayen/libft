@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raissaou <raissaou@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-12-03 08:18:09 by raissaou          #+#    #+#             */
-/*   Updated: 2024-12-03 08:18:09 by raissaou         ###   ########.fr       */
+/*   Created: 2024-12-03 10:17:45 by raissaou          #+#    #+#             */
+/*   Updated: 2024-12-03 10:17:45 by raissaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <stddef.h>
-# include <unistd.h>
-
-#endif
+size_t	ft_strlcpy(char *dst, const char *src, size_t size )
+{
+	while (src != '\0')
+	{
+		dst = src;
+		size++;
+	}
+	return (size);
+}
