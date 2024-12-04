@@ -19,11 +19,23 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	s = (unsigned char *) src;
 	d = (unsigned char *) dest;
-	while (n--)
+	while (n > 0)
 	{
 		*d = *s;
 		d++;
 		s++;
+		n--;
 	}
+	*d = '\0';
 	return (dest);
 }
+
+/*int main() {
+    char src[] = "hello world";
+    char dest[20];
+
+    ft_memcpy(dest, src, 11);
+    printf("Dest: %s\n", dest);
+    
+    return 0;
+}*/

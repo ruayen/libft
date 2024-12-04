@@ -19,3 +19,9 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+
+/*int main()
+{
+	printf("%c\n",ft_toupper('a'));
+	return 0;
+}*/

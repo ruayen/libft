@@ -19,3 +19,18 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+
+/*int main()
+{
+    int c = 65; 
+
+    printf("Is %d ASCII? %d\n", c, ft_isascii(c));
+
+    c = 128;  
+    printf("Is %d ASCII? %d\n", c, ft_isascii(c));
+
+    c = -1; 
+    printf("Is %d ASCII? %d\n", c, ft_isascii(c));
+
+    return 0;
+}*/

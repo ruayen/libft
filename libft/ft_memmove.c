@@ -22,17 +22,25 @@ void	ft_memmove(void *dest, const void *src, size_t n)
 	if (dest <= src)
 	{
 		while (n--)
-		{
 			*d++ = *s++;
-		}
 	}
-	else if (dest > src)
+	else
 	{
-		*d += n - 1;
-		*s += n - 1;
+		d += n - 1;
+		s += n - 1;
 		while (n--)
-		{
 			*d-- = *s--;
-		}
 	}
+	*d = '\0';
 }
+
+/*
+int main() {
+    char src[] = "Hola Mundo";
+    char dest[20];
+
+    ft_memmove(dest, src, 10);
+    printf("Destino: %s\n", dest);
+    
+    return 0;
+}*/

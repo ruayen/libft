@@ -19,3 +19,21 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+
+/*int main()
+{
+    int c = 65; 
+
+    printf("Is '%c' printable? %d\n", c, ft_isprint(c));
+
+    c = 9;  
+    printf("Is '%c' printable? %d\n", c, ft_isprint(c));
+
+    c = 32;  
+    printf("Is '%c' printable? %d\n", c, ft_isprint(c));
+
+    c = 127;  
+    printf("Is '%c' printable? %d\n", c, ft_isprint(c));
+
+    return 0;
+}*/

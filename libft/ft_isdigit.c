@@ -19,3 +19,18 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+
+/*int main()
+{
+    int c = '5';  // ASCII for the digit '5'
+
+    printf("Is '%c' a digit? %d\n", c, ft_isdigit(c));
+
+    c = 'A';  // Not a digit
+    printf("Is '%c' a digit? %d\n", c, ft_isdigit(c));
+
+    c = '0';  // ASCII for the digit '0'
+    printf("Is '%c' a digit? %d\n", c, ft_isdigit(c));
+
+    return 0;
+}*/

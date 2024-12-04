@@ -16,12 +16,27 @@ void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ss;
 
-	ss = s;
-	while (s && n > 0)
+	ss = (unsigned char *)s;
+	while (n > 0)
 	{
-		*ss = c;
+		*ss = (unsigned char)c;
 		ss++;
 		n--;
 	}
 	return (s);
 }
+
+/*
+int main() 
+{
+    char arr[10];
+    int i = 0;
+    
+    ft_memset(arr, 'A', 10);
+    
+    while (i < 10) {
+        printf("%c ", arr[i]);
+        i++; 
+    }
+}
+*/

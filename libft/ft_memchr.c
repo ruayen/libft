@@ -1,43 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raissaou <raissaou@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-12-03 11:36:37 by raissaou          #+#    #+#             */
-/*   Updated: 2024-12-03 11:36:37 by raissaou         ###   ########.fr       */
+/*   Created: 2024-12-04 11:38:24 by raissaou          #+#    #+#             */
+/*   Updated: 2024-12-04 11:38:24 by raissaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const char	*last;
+	size_t	i;
+	char	*str;
 
-	last = NULL;
-	while (*s != 0)
+	str = (char *)s;
+	i = 0;
+	while (i < n)
 	{
-		if (*s == (char)c)
+		if (str[i] == (char)c)
 		{
-			last = s;
+			return ((void *)&str[i]);
 		}
-		s++;
+		i++;
 	}
-	if (c == '\0')
-	{
-		return ((char *)s);
-	}
-	return ((char *)last);
+	return (NULL);
 }
 
 /*int main()
 {
-    const char *str = "olo";
-    char c = 'o';
+    const char *str = "Hello World";
+    int c = 'W';
 
-    char *result = ft_strrchr(str, c);
+    char *result = ft_memchr(str, c, 10);
 
     if (result != NULL) {
         printf("The character '%c' is in position %ld\n", c, result - str);

@@ -19,3 +19,18 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+
+/*int main()
+{
+    char c = 'A';
+
+    printf("Is '%c' alphanumeric? %d\n", c, ft_isalnum(c));
+
+    c = '1';
+    printf("Is '%c' alphanumeric? %d\n", c, ft_isalnum(c));
+
+    c = '#';
+    printf("Is '%c' alphanumeric? %d\n", c, ft_isalnum(c));
+
+    return 0;
+}*/
