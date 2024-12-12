@@ -30,7 +30,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-/*int main()
+/*
+#include <stdio.h>
+int main()
 {
     const char *str = "Hello World";
     int c = 'W';

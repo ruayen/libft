@@ -20,7 +20,9 @@ int	ft_isdigit(int c)
 		return (0);
 }
 
-/*int main()
+/*
+#include <stdio.h>
+int main()
 {
     int c = '5';  // ASCII for the digit '5'
 

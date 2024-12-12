@@ -24,7 +24,7 @@ size_t	ft_strlen(const char *s)
 	}
 	return (lenght);
 }
-/*
+/*#include <stdio.h>
 int main()
 {
 	printf("%zu\n",ft_strlen("Aaaa"));

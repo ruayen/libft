@@ -30,7 +30,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/*int main() {
+/*#include <stdio.h>
+int main() {
     char src[] = "hello world";
     char dest[20];
 

@@ -28,7 +28,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-/*int	main()
+/*#include <stdio.h>
+int	main()
 {
 	printf("%d\n",ft_strncmp("Hello, apple", "Hello, banana",7));
 }*/

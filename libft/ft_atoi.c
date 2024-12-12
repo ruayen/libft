@@ -43,7 +43,9 @@ while(str[i] !='\0' && str[i] >= '0' && str[i] <= '9')
 }
 return (sign * result);
 }
-/*int main()
+/*
+#include <stdio.h>
+int main()
 {
     
     const char *str1 = "12345";

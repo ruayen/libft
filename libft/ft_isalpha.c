@@ -20,7 +20,9 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
-/*int main()
+/*
+#include <stdio.h>
+int main()
 {
     char c = 'A';
 

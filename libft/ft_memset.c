@@ -27,6 +27,7 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 
 /*
+#include <stdio.h>
 int main() 
 {
     char arr[10];

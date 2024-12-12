@@ -32,7 +32,9 @@ char	*ft_strrchr(const char *s, int c)
 	return ((char *)last);
 }
 
-/*int main()
+/*
+#include <stdio.h>
+int main()
 {
     const char *str = "olo";
     char c = 'o';

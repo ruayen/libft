@@ -20,7 +20,10 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
-/*int main()
+/*
+#include <stdio.h>
+
+int main()
 {
     char c = 'A';
 

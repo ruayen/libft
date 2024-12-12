@@ -20,7 +20,9 @@ int	ft_toupper(int c)
 		return (c);
 }
 
-/*int main()
+/*
+#include <stdio.h>
+int main()
 {
 	printf("%c\n",ft_toupper('a'));
 	return 0;

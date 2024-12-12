@@ -29,7 +29,9 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-/*int main()
+/*
+#include <stdio.h>
+int main()
 {
     const char *str = "Hello World";
     char c = 'W';
