@@ -13,19 +13,19 @@
 #include "libft.h"
 #include <stdlib.h>
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char 	*str;
+	char	*str;
 	int		i;
 
 	i = 0;
 	str = NULL;
-	if(!s || (!(str = malloc(len + 1))))
+	str = malloc(len + 1);
+	if (!s || !str)
 		return (NULL);
-
 	if (start > ft_strlen(s))
 		return (ft_strdup(""));
-	while(len--)
+	while (len--)
 	{
 		str[i] = s[start];
 		i++;
@@ -34,8 +34,8 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 int main() {
     char str[] = "Hello, World!";
     
@@ -47,5 +47,5 @@ int main() {
     }
     
     return 0;
-}*/
-
+}
+*/
